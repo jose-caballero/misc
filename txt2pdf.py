@@ -167,4 +167,7 @@ def convert_to_pdf(input_file, output_file):
 
 
 if __name__ == '__main__':
-    convert_to_pdf("input.txt", 'output.pdf')
+    input_filename = input("Enter name of file:")
+    output_filename = input_filename + '.pdf'
+    convert_to_pdf(input_filename, output_filename)
+
